@@ -1,0 +1,223 @@
+# ======================================
+# Environment files
+# ======================================
+.env
+**/.env
+.env*
+**/.env.*
+!.env.example
+!.shared/.env.example
+!.shared/.env.backend
+!.shared/.env.cms
+!.shared/.env.frontend
+!/frontend/.env.example
+!/.env.local
+!/.env.production
+!/.env.staging
+
+# ======================================
+# Root-level ignores
+# ======================================
+
+# Logs
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# System and hidden files
+.DS_Store
+Thumbs.db
+
+# OS or editor files
+*.swp
+*.swo
+*.tmp
+*~
+*.bak
+*.sh~
+
+# Compressed Files
+*.7z
+*.gz
+*.zip
+*.tgz
+*.tar.gz
+*.tar.bz2
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# Dev Space
+.docs/
+.ideas/
+.backups/
+
+# Optional: lock files (comment out the ones you use)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# GitHub Codespaces / Dev Containers
+.devcontainer/
+
+# ======================================
+# Dependencies
+# ======================================
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ======================================
+# Testing
+# ======================================
+/coverage
+
+# ======================================
+# Next.js (frontend/)
+# ======================================
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+/frontend/.next/
+/frontend/out/
+/frontend/build
+/frontend/dist/
+/frontend/.turbo/
+/frontend/.cache/
+/frontend/.eslintcache/
+/frontend/coverage/
+!/frontend/next-env.d.ts
+/frontend/*.tsbuildinfo
+/frontend/vendor/
+# Environment variables for frontend
+/frontend/.env
+/frontend/.env.*
+
+# Vercel
+/frontend/.vercel/
+
+# Optional: local dev SSL
+/frontend/*.pem
+
+# ======================================
+# Laravel (backend/)
+# ======================================
+/backend/vendor/
+/backend/node_modules/
+/backend/storage/
+/backend/storage/app/public/*
+!/backend/storage/app/public/.gitignore
+/backend/bootstrap/cache/
+
+/backend/.env
+/backend/.env.*
+!/backend/.env.example
+
+/backend/composer.lock
+/backend/.phpunit.result.cache
+/backend/phpunit.xml.cache
+/backend/coverage/
+
+/backend/_ide_helper*
+/backend/_ide_helper_models.php
+
+# ======================================
+# WordPress (cms/)
+# ======================================
+/cms/wp-config.php
+/cms/wp-content/uploads/
+/cms/wp-content/upgrade/
+/cms/wp-content/backup-*/ 
+/cms/.htaccess
+/cms/.env
+/cms/.env.*
+
+/cms/wp-admin/
+/cms/wp-includes/
+
+/cms/wp-content/plugins/*
+!/cms/wp-content/plugins/ultraslider/
+!/cms/wp-content/plugins/image-minify/
+!/cms/wp-content/plugins/custom-plugin/
+
+/cms/wp-content/themes/*
+!/cms/wp-content/themes/your-custom-theme/
+
+/cms/wp-content/cache/
+/cms/wp-content/upgrade/
+
+/cms/debug.log
+
+/cms/.wp-cli/cache/
+
+**/build/*
+**/dist/*
+**/node_modules/*
+**/public/*
+
+# ======================================
+# CI/CD and GitHub Actions
+# ======================================
+/.github/workflows/*.log
+/.github/workflows/*.tmp
+/.github/workflows/*.bak
+/.github/workflows/secrets.json
+/ci/
+/build/
+/dist/
+/logs/
+*.tsbuildinfo
+
+# ======================================
+# Docker (optional)
+# ======================================
+/docker-compose.override.yml
+/docker.env
+.Dockerfile-local
+*.pid
+
+# ======================================
+# Encrypted Secrets (Any)
+# ======================================
+*.gpg
+*.key
+*.pem
+*.cert
+*.crt
+
+# ======================================
+# Cross-OS Dev Support
+# ======================================
+* text=auto
+
+*.sh text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.php text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+
+*.env text
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
