@@ -1,0 +1,423 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@import '@/styles/utilities';
+
+/* =========================================
+   🔧 CSS RESET / NORMALIZATION
+========================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================================
+   🎨 ROOT VARIABLES
+========================================= */
+:root {
+  /* Color Palette */
+  --color-primary: #d67b28;
+  /* Brandy Punch */
+  --color-secondary: #a74f14;
+  /* Hawaiian Tan */
+  --color-accent: #f0aa70;
+  /* Brown Sugar */
+  --color-bg-primary: #F6EBD3;
+  /* Wheatfield */
+  --color-bg-secondary: #FDF4E1;
+  /* Egg Sour */
+  --color-bg-light: #ffe0ac;
+  /* Navajo White */
+  --color-bg-dark: #65402c;
+  /* Irish Coffee */
+  --color-text: #000000;
+  --color-text-light: #FFFFFF;
+
+  /* Typography */
+  --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* =========================================
+   🧍 BODY STYLES
+========================================= */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+  padding: 0;
+}
+
+/* =========================================
+   🏷️ HEADINGS
+========================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* =========================================
+   📄 PARAGRAPHS
+========================================= */
+p {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  line-height: var(--line-height-base);
+}
+
+/* =========================================
+   🔗 LINKS
+========================================= */
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* =========================================
+   📋 LISTS
+========================================= */
+ul,
+ol {
+  margin-left: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+li {
+  margin-bottom: var(--space-xs);
+}
+
+/* =========================================
+   🔘 BUTTONS
+========================================= */
+button,
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--color-secondary);
+}
+
+/* =========================================
+   📝 FORMS
+========================================= */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(214, 123, 40, 0.2);
+}
+
+/* =========================================
+   🖼️ IMAGES
+========================================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   📊 TABLES
+========================================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-md);
+}
+
+th,
+td {
+  padding: var(--space-sm);
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-bg-secondary);
+}
+
+/* =========================================
+   📐 LAYOUT
+========================================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section {
+  padding: var(--space-lg) 0;
+}
+
+.card {
+  background-color: var(--color-bg-light);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* =========================================
+   🌟 TRANSITIONS
+========================================= */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================================
+   🌙 DARK THEME SYSTEM OVERRIDES
+========================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #F6EBD3;
+    --color-bg-primary: #4a2c22;
+    /* Iroko */
+    --color-bg-secondary: #65402c;
+    /* Irish Coffee */
+    --color-bg-light: #9a6844;
+    /* Earth */
+    --color-bg-dark: #000000;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text);
+  }
+
+  main {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-light);
+  }
+
+  header,
+  footer,
+  .section,
+  .card {
+    background-color: var(--color-bg-secondary);
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--color-primary);
+  }
+
+  button,
+  .btn {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+  }
+
+  button:hover,
+  .btn:hover {
+    background-color: var(--color-primary);
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text);
+    border-color: var(--color-bg-light);
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(240, 170, 112, 0.2);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--color-bg-dark);
+  }
+
+  .bg-white p {
+    color: #000;
+  }
+}
+
+/* =========================================
+   🌙 DARK THEME MANUAL OVERRIDES
+========================================= */
+.dark-mode {
+  --color-text: #F6EBD3;
+  /* Iroko */
+  --color-bg-primary: #4a2c22;
+  /* Irish Coffee */
+  --color-bg-secondary: #65402c;
+  /* Earth */
+  --color-bg-light: #9a6844;
+  --color-bg-dark: #000000;
+}
+
+body.dark-mode {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .section,
+.dark-mode .card {
+  background-color: var(--color-bg-secondary);
+}
+
+.dark-mode a {
+  color: var(--color-accent);
+}
+
+.dark-mode a:hover,
+.dark-mode a:focus {
+  color: var(--color-primary);
+}
+
+.dark-mode button,
+.dark-mode .btn {
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+}
+
+.dark-mode button:hover,
+.dark-mode .btn:hover {
+  background-color: var(--color-primary);
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+  border-color: var(--color-bg-light);
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(240, 170, 112, 0.2);
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: var(--color-bg-dark);
+}
+
+.dark-mode .bg-white p {
+  color: #000;
+}
