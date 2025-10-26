@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.27.6",
+    "@vercel/speed-insights": "^1.2.0",
     "axios": "^1.10.0",
     "classnames": "^2.5.1",
     "html-react-parser": "^5.2.6",

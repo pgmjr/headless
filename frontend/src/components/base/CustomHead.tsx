@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import FileHash from "@/utils/FileHash";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface CustomHeadProps {
   title?: string,
@@ -17,6 +18,8 @@ const CustomHead = ({ title, description, children }: CustomHeadProps) => (
       <meta charSet="UTF-8" />
       <link rel='preload' href="/style.css" as="style" integrity={FileHash(`style.css`)} />
       {children}
+
+      <SpeedInsights />
     </Head>
   </>
 );
