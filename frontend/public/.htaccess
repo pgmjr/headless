@@ -1,0 +1,12 @@
+# -------------------------------
+# Enable CORS for your frontend
+# -------------------------------
+<IfModule mod_headers.c>
+  # Match allowed origins
+  SetEnvIf Origin "http(s)?://(localhost:5000|localhost:8080)$" CORS_ALLOW=$0
+
+  Header always set Access-Control-Allow-Origin "%{CORS_ALLOW}e" env=CORS_ALLOW
+  Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+  Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+  Header always set Access-Control-Allow-Credentials "true"
+</IfModule>

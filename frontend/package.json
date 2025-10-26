@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "stop": "next stop",
-    "sri": "node ./scripts/generate-sri.js",
-    "postbuild": "npm run sri"
+    "stop": "next stop"
   },
   "dependencies": {
     "@babel/runtime": "^7.27.6",
