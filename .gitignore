@@ -120,7 +120,7 @@ package-lock.json
 /backend/vendor/
 /backend/node_modules/
 /backend/storage/
-/backend/storage/app/public/*
+!/backend/storage/app/public/*
 !/backend/storage/app/public/.gitignore
 /backend/bootstrap/cache/
 

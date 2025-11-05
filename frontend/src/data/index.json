@@ -2,31 +2,101 @@
   "menu": {
     "primary": {
       "items": [
-        { "label": "Home", "link": "/", "icon": "home" },
-        { "label": "About", "link": "/about", "icon": "info" },
-        { "label": "Services", "link": "/services", "icon": "cog" },
-        { "label": "Products", "link": "/products", "icon": "box" },
-        { "label": "Blog", "link": "/blogs", "icon": "newspaper" },
-        { "label": "Contact", "link": "/contact", "icon": "envelope" },
-        { "label": "Widgets", "link": "/widgets", "icon": "cog" }
+        {
+          "label": "Home",
+          "link": "/",
+          "icon": "home"
+        },
+        {
+          "label": "About",
+          "link": "/about",
+          "icon": "info"
+        },
+        {
+          "label": "Services",
+          "link": "/services",
+          "icon": "cog"
+        },
+        {
+          "label": "Products",
+          "link": "/products",
+          "icon": "box"
+        },
+        {
+          "label": "Blog",
+          "link": "/blogs",
+          "icon": "newspaper"
+        },
+        {
+          "label": "FAQs",
+          "link": "/faqs",
+          "icon": "newspaper"
+        },
+        {
+          "label": "Contact",
+          "link": "/contact",
+          "icon": "envelope"
+        },
+        {
+          "label": "Widgets",
+          "link": "/widgets",
+          "icon": "cog"
+        }
       ]
     },
     "secondary": {
       "items": [
-        { "label": "Home", "link": "/", "icon": "home" },
-        { "label": "About", "link": "/about", "icon": "info" },
-        { "label": "Services", "link": "/services", "icon": "cog" },
-        { "label": "Products", "link": "/products", "icon": "box" },
-        { "label": "Blog", "link": "/blogs", "icon": "newspaper" },
-        { "label": "Contact", "link": "/contact", "icon": "envelope" },
-        { "label": "Widgets", "link": "/widgets", "icon": "cog" }
+        {
+          "label": "Home",
+          "link": "/",
+          "icon": "home"
+        },
+        {
+          "label": "About",
+          "link": "/about",
+          "icon": "info"
+        },
+        {
+          "label": "Services",
+          "link": "/services",
+          "icon": "cog"
+        },
+        {
+          "label": "Products",
+          "link": "/products",
+          "icon": "box"
+        },
+        {
+          "label": "Blog",
+          "link": "/blogs",
+          "icon": "newspaper"
+        },
+        {
+          "label": "Contact",
+          "link": "/contact",
+          "icon": "envelope"
+        },
+        {
+          "label": "Widgets",
+          "link": "/widgets",
+          "icon": "cog"
+        }
       ]
     },
     "footer": {
       "items": [
-        { "label": "Privacy Policy", "link": "/privacy-policy" },
-        { "label": "Terms of Service", "link": "/terms-of-service" },
-        { "label": "Sitemap", "link": "/sitemap" }
+        {
+          "label": "Privacy Policy",
+          "link": "/privacy-policy"
+        },
+        {
+          "label": "Terms of Service",
+          "link": "/terms-of-service"
+        },
+        {
+          "label": "Sitemap",
+          "link": "/sitemap"
+        }
       ]
     }
   },
@@ -140,10 +210,30 @@
     },
     "form": {
       "fields": [
-        { "name": "name", "label": "Full Name", "type": "text", "required": true },
-        { "name": "email", "label": "Email Address", "type": "email", "required": true },
-        { "name": "subject", "label": "Subject", "type": "text", "required": false },
-        { "name": "message", "label": "Your Message", "type": "textarea", "required": true }
+        {
+          "name": "name",
+          "label": "Full Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "message",
+          "label": "Your Message",
+          "type": "textarea",
+          "required": true
+        }
       ],
       "submitText": "Send Message",
       "successMessage": "Thank you for reaching out. I’ll be in touch shortly.",
@@ -244,6 +334,58 @@
       }
     ]
   },
+  "faqs": {
+    "seo": {
+      "title": "FAQs",
+      "description": "Get expert answers to frequently asked questions about Custom WordPress Development, Technical SEO, Ecommerce Setup, and performance tools like WP Booster and SEO Inspector. Learn how we help businesses grow online."
+    },
+    "content": {
+      "title": "FAQs",
+      "description": "Discover answers to the most common questions about our Custom WordPress and SEO services. Whether you're launching a new site or optimizing an existing one, our FAQs cover everything from development and performance tools to SEO strategy and ecommerce setup."
+    },
+    "items": [
+      {
+        "question": "What makes your WordPress development “custom”?",
+        "answer": "We build tailored solutions from the ground up—no bloated themes or generic plugins. Every site is optimized for performance, accessibility, scalability, security, and SEO."
+      },
+      {
+        "question": "Do I need technical knowledge to use your products?",
+        "answer": "Not at all. Our tools like WP Performance Booster and SEO Inspector Toolkit are designed for ease of use, with guided setup and documentation included."
+      },
+      {
+        "question": "What’s included in your Technical SEO service?",
+        "answer": "We audit your site’s structure, speed, indexing, schema, and more. We also implement fixes and provide ongoing optimization strategies."
+      },
+      {
+        "question": "Can you migrate my existing site to WordPress?",
+        "answer": "Yes. We offer full migration services, including content transfer, URL mapping, SEO preservation, and performance tuning."
+      },
+      {
+        "question": "How do you handle ecommerce storefront setup?",
+        "answer": "We configure WooCommerce or other platforms, customize product pages, integrate payment gateways, and ensure mobile responsiveness and SEO readiness."
+      },
+      {
+        "question": "What is the WP Performance Booster?",
+        "answer": "It’s a toolkit that enhances site speed, caching, image optimization, and Core Web Vitals—ideal for improving user experience and SEO rankings."
+      },
+      {
+        "question": "What does the SEO Inspector Toolkit do?",
+        "answer": "It scans your site for SEO issues, provides actionable insights, and helps you track improvements over time. Great for agencies and site owners."
+      },
+      {
+        "question": "Do you offer support and maintenance?",
+        "answer": "Yes. We provide ongoing support, updates, backups, and performance monitoring to keep your site secure and optimized."
+      },
+      {
+        "question": "Can I request a custom WordPress theme?",
+        "answer": "Absolutely. Our Custom Theme Generator lets you define layout, branding, and functionality. We build it to match your exact vision."
+      },
+      {
+        "question": "How long does a typical project take?",
+        "answer": "Timelines vary based on scope, but most projects range from 2 to 6 weeks. We provide detailed estimates after the initial consultation."
+      }
+    ]
+  },
   "widgets": {
     "seo": {
       "title": "Widgets | Jhun’s Site",
@@ -267,8 +409,14 @@
       {
         "name": "Accordion",
         "items": [
-          { "question": "What is this?", "answer": "An accordion is a collapsible section used to show/hide content." },
-          { "question": "How does it work?", "answer": "It uses toggled state to expand or collapse sections." }
+          {
+            "question": "What is this?",
+            "answer": "An accordion is a collapsible section used to show/hide content."
+          },
+          {
+            "question": "How does it work?",
+            "answer": "It uses toggled state to expand or collapse sections."
+          }
         ]
       },
       {
@@ -279,9 +427,18 @@
       {
         "name": "Tabs",
         "tabs": [
-          { "label": "Overview", "content": "This is the overview tab content." },
-          { "label": "Features", "content": "This is the features tab content." },
-          { "label": "Pricing", "content": "This is the pricing tab content." }
+          {
+            "label": "Overview",
+            "content": "This is the overview tab content."
+          },
+          {
+            "label": "Features",
+            "content": "This is the features tab content."
+          },
+          {
+            "label": "Pricing",
+            "content": "This is the pricing tab content."
+          }
         ]
       },
       {
@@ -306,9 +463,18 @@
       {
         "name": "Stats Grid",
         "stats": [
-          { "label": "Clients", "value": "120+" },
-          { "label": "Projects", "value": "300+" },
-          { "label": "Awards", "value": "15" }
+          {
+            "label": "Clients",
+            "value": "120+"
+          },
+          {
+            "label": "Projects",
+            "value": "300+"
+          },
+          {
+            "label": "Awards",
+            "value": "15"
+          }
         ]
       },
       {
@@ -317,12 +483,20 @@
           {
             "title": "Starter",
             "price": "$29/mo",
-            "features": ["Basic Support", "10 Pages", "1 User"]
+            "features": [
+              "Basic Support",
+              "10 Pages",
+              "1 User"
+            ]
           },
           {
             "title": "Pro",
             "price": "$59/mo",
-            "features": ["Priority Support", "50 Pages", "5 Users"]
+            "features": [
+              "Priority Support",
+              "50 Pages",
+              "5 Users"
+            ]
           }
         ]
       },
@@ -333,7 +507,11 @@
       },
       {
         "name": "Breadcrumb",
-        "items": ["Home", "Services", "SEO Optimization"]
+        "items": [
+          "Home",
+          "Services",
+          "SEO Optimization"
+        ]
       },
       {
         "name": "Badge",
