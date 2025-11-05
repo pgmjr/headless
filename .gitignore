@@ -89,10 +89,6 @@ package-lock.json
 /frontend/.pnp
 /frontend/.pnp.*
 /frontend/.yarn/*
-!/frontend/.yarn/patches
-!/frontend/.yarn/plugins
-!/frontend/.yarn/releases
-!/frontend/.yarn/versions
 /frontend/.next/
 /frontend/out/
 /frontend/build
@@ -101,10 +97,9 @@ package-lock.json
 /frontend/.cache/
 /frontend/.eslintcache/
 /frontend/coverage/
-!/frontend/next-env.d.ts
-!/frontend/public/**/*
 /frontend/*.tsbuildinfo
 /frontend/vendor/
+
 # Environment variables for frontend
 /frontend/.env
 /frontend/.env.*
@@ -114,6 +109,14 @@ package-lock.json
 
 # Optional: local dev SSL
 /frontend/*.pem
+
+# Unignore List
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+!/frontend/next-env.d.ts
+!/frontend/public/*
 
 # ======================================
 # Laravel (backend/)
