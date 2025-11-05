@@ -102,6 +102,7 @@ package-lock.json
 /frontend/.eslintcache/
 /frontend/coverage/
 !/frontend/next-env.d.ts
+!/frontend/public/**/*
 /frontend/*.tsbuildinfo
 /frontend/vendor/
 # Environment variables for frontend
